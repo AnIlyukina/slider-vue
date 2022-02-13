@@ -1,11 +1,17 @@
 <template>
-  <section class="carousel">
-    <CarouselItem/>
+  <section class="wrapper">
+    <div class="carousel">
+      <CarouselItem 
+      v-for="item in carouselData"
+      :key="item.id"
+      :itemData="item"
+    />
+    </div>
   </section>
 </template>
 
 <script>
-import CarouselItem from './Carousel-item.vue'
+import CarouselItem from './CarouselItem.vue'
 
 
 export default {
@@ -14,7 +20,7 @@ export default {
     CarouselItem 
   },
   props:{
-    carousel_data:{
+    carouselData:{
       type: Array,
       default: ()=>[]
     }
@@ -23,5 +29,14 @@ export default {
 </script>
 
 <style>
+.wrapper{
+  max-width: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+}
 
+.carousel{
+  display: flex;
+
+}
 </style>

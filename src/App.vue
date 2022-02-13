@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     Карусель
-    <Carousel :carousel_data="sliderItems"/>
+    <Carousel :carouselData="sliderItems"/>
   </div>
 </template>
 
