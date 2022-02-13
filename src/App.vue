@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     Карусель
-    <Carousel :carouselData="sliderItems"/>
+    <Wrapper :carouselData="sliderItems"/>
   </div>
 </template>
 
 <script>
  
-import Carousel from './components/Carousel.vue'
+import Wrapper from './components/Wrapper.vue'
 
 
 export default {
@@ -24,7 +24,7 @@ export default {
     }
   },
   components: {
-    Carousel,
+    Wrapper,
   }
 }
 </script>

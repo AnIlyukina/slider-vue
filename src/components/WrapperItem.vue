@@ -1,15 +1,15 @@
 <template>
-  <div class="carousel__item">
+  <div class="wrapper__item">
     <img 
       :src=" require('../assets/' + itemData.img)"
-      class="carousel__image"
+      class="wrapper__image"
       />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CarouselItem',
+  name: 'WrapperItem',
   props: {
     itemData:{
       type: Object,
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style>
-  .carousel__image{
+  .wrapper__image{
     width: 500px;
     height: 300px;
     object-fit: cover;
