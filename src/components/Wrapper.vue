@@ -30,6 +30,18 @@ export default {
     carouselData:{
       type: Array,
       default: ()=>[]
+    }, 
+    interval:{
+      type:Number,
+      default:0
+    }
+  },
+  mounted(){
+    if(this.interval > 0){
+      let context = this;
+      setInterval(function(){
+        context.nextSlide()
+      }, context.interval)
     }
   },
   methods:{

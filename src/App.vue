@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     Карусель
-    <Wrapper :carouselData="sliderItems"/>
+    <Wrapper 
+      :carouselData="sliderItems"
+      :interval="1500"
+      />
   </div>
 </template>
 
