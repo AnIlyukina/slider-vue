@@ -3,7 +3,7 @@
     Карусель
     <Wrapper 
       :carouselData="sliderItems"
-      :interval="1500"
+      :interval="3000"
       />
   </div>
 </template>
